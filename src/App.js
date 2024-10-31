@@ -11,19 +11,19 @@ function App() {
   return (
     <>
       <Navbar className="sticky-top" />
-      <div id="home" className="d-flex justify-content-center align-items-center mx-3 full-height-lg">
+      <div id="home" className="full-height-lg section">
         <Home />
       </div>
-      <div id="about">
+      <div id="about" className="section">
         <About />
       </div>
-      <div id="summary" style={{ marginTop: "10em" }}>
+      <div id="summary" className="section" style={{ marginTop: "10em" }}>
         <Summary />
       </div>
-      <div id="services" style={{ marginTop: "10em" }}>
+      <div id="services" className="section" style={{ marginTop: "10em" }}>
         <Services />
       </div>
-      <div id="contact" style={{ marginTop: "10em" }}>
+      <div id="contact" className="section" style={{ marginTop: "10em" }}>
         <ContactForm />
       </div>
     </>

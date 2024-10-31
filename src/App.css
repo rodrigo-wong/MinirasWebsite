@@ -169,3 +169,7 @@ h2 {
   color: #555;
   text-align: center;
 }
+/* Add this CSS to your stylesheet */
+.section {
+  scroll-margin-top: 100px; /* Adjust this value to the height of your Navbar */
+}

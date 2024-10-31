@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Image } from "react-bootstrap";
 
 const About = () => {
   return (
-    <Container className="">
+    <Container>
       <h2 className="text-center mb-5">About Me</h2>
       <Row className="justify-content-center fs-5 m-3 m-md-4 m-lg-5 g-3">
         {/* Left Column */}

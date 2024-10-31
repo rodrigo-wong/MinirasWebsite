@@ -20,10 +20,6 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      formData,
-      process.env.REACT_APP_EMAILJS_API_KEY);
     emailjs
       .send(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -32,13 +28,11 @@ const ContactForm = () => {
         process.env.REACT_APP_EMAILJS_API_KEY
       )
       .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
         setSubmitted(true);
         setError(false);
         setFormData({ name: "", email: "", message: "" });
       })
       .catch((err) => {
-        console.error("FAILED...", err);
         setError(true);
       });
   };
@@ -62,9 +56,12 @@ const ContactForm = () => {
           Oops! Something went wrong. Please try again.
         </Alert>
       )}
-      <Row className="justify-content-center fs-5 mx-3 mx-md-4 mx-lg-5 g-3">
-        <Col md={6} lg={8}>
-          <Form onSubmit={handleSubmit} className="p-4 shadow contact-form">
+      <Row className="d-flex align-items-stretch fs-5 mx-3 mx-md-4 mx-lg-5 g-3">
+        <Col md={6} lg={8} className="d-flex">
+          <Form
+            onSubmit={handleSubmit}
+            className="p-4 shadow contact-form w-100"
+          >
             <Form.Group controlId="formName" className="mb-3">
               <Form.Label>Name</Form.Label>
               <Form.Control
@@ -77,7 +74,6 @@ const ContactForm = () => {
                 className="input-field"
               />
             </Form.Group>
-
             <Form.Group controlId="formEmail" className="mb-3">
               <Form.Label>Email address</Form.Label>
               <Form.Control
@@ -90,7 +86,6 @@ const ContactForm = () => {
                 className="input-field"
               />
             </Form.Group>
-
             <Form.Group controlId="formMessage" className="mb-3">
               <Form.Label>Message</Form.Label>
               <Form.Control
@@ -104,7 +99,6 @@ const ContactForm = () => {
                 className="input-field"
               />
             </Form.Group>
-
             <div className="text-center">
               <Button variant="dark" type="submit" className="submit-btn">
                 Send Message
@@ -112,23 +106,20 @@ const ContactForm = () => {
             </div>
           </Form>
         </Col>
-
-        {/* New Column for Contact Information with Enhanced Styling */}
-        <Col md={6} lg={4} className="d-flex align-items-center">
-          <div className="contact-info-card p-4 shadow rounded-3">
+        <Col md={6} lg={4} className="d-flex">
+          <div className="contact-info-card p-4 shadow rounded-3 w-100 d-flex flex-column justify-content-center align-items-center">
             <h5 className="fw-bold mb-3 text-center">Or reach me at:</h5>
-            <p className="contact-info-text">
+            <p className="contact-info-text text-center">
               <FontAwesomeIcon icon={faPhone} className="me-2" />
               <strong>Phone:</strong> (437) 242-1689
             </p>
-            <p className="contact-info-description">
-              Feel free to reach out via phone if you have any
-              questions or need immediate assistance.
+            <p className="contact-info-description text-left">
+              Feel free to reach out via phone if you have any questions or need
+              immediate assistance.
             </p>
           </div>
         </Col>
       </Row>
-
     </Container>
   );
 };

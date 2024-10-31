@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Badge, Image, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   return (
@@ -63,12 +63,25 @@ const Home = () => {
             prestigious competitions.
           </p>
           <div className="d-flex justify-content-md-start justify-content-center gap-3">
-            <Button variant="outline-secondary" className="rounded-circle">
-              <FontAwesomeIcon icon={faLinkedin} size="lg" />
-            </Button>
-            <Button variant="outline-secondary" className="rounded-circle">
-              <FontAwesomeIcon icon={faEnvelope} size="lg" />
-            </Button>
+            <a
+              href="https://youtube.com/@miniranajafzade5967"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline-secondary" className="rounded-circle">
+              <FontAwesomeIcon icon={faYoutube} size="lg" style={{ color: "#FF0000" }} />
+              </Button>
+            </a>
+
+            <a
+              href="mailto:minira.musicl@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline-secondary" className="rounded-circle">
+                <FontAwesomeIcon icon={faEnvelope} size="lg" />
+              </Button>
+            </a>
           </div>
         </Col>
       </Row>

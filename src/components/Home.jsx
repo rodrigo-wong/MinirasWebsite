@@ -69,17 +69,19 @@ const Home = () => {
               rel="noopener noreferrer"
             >
               <Button variant="outline-secondary" className="rounded-circle">
-              <FontAwesomeIcon icon={faYoutube} size="lg" style={{ color: "#FF0000" }} />
+                <FontAwesomeIcon
+                  icon={faYoutube}
+                  size="lg"
+                  style={{ color: "#FF0000" }}
+                />
               </Button>
             </a>
-
-            <a
-              href="mailto:minira.musicl@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="mailto:minira.musicl@gmail.com">
               <Button variant="outline-secondary" className="rounded-circle">
-                <FontAwesomeIcon icon={faEnvelope} size="lg" />
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  size="lg"
+                />
               </Button>
             </a>
           </div>

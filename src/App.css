@@ -1,38 +1,171 @@
-.App {
+/* Spread out the nav links */
+.nav-link {
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #800020; /* Dark red for hover effect */
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust to move the underline closer/farther */
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #800020; /* Underline color */
+  transition: width 0.3s;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #800020;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* Ensure it's above other elements */
+}
+
+.theme-toggle-icon {
+  font-size: 20px;
+  color: #6c757d; /* Dark gray */
+  cursor: pointer;
+}
+
+.theme-toggle-icon:hover {
+  color: #800020;
+}
+
+.profile-image-wrapper {
+  width: 400px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.badge-warning {
+  background-color: rgb(192, 166, 49); /* Custom badge color */
+  color: #333; /* Darker text color */
+}
+
+button.rounded-circle {
+  width: 50px;
+  height: 50px;
+}
+/* Full-height only on large screens and above */
+.full-height-lg {
+  height: auto; /* Default height for small and medium screens */
+}
+
+@media (min-width: 992px) {
+  .full-height-lg {
+      height: 92vh; /* Full height on large screens and above */
+      display: flex;
+      flex-direction: column;
+  }
+}
+/* General styling for a classical, piano theme */
+
+.contact-container {
+  font-family: 'Georgia', serif;
+  color: #333;
+}
+
+h2 {
+  font-family: 'Times New Roman', serif;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.contact-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.input-field {
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid #333;
+  border-radius: 0;
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field:focus {
+  border-bottom-color: #800020;
+  outline: none;
+  box-shadow: none;
+}
+
+.submit-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 0.6rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #800020;
+  color: #fff;
+}
+
+.alert-success {
+  font-family: 'Georgia', serif;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.contact-info-card {
+  background-color: #f8f9fa; /* Light background color for contrast */
+  border: 1px solid #dee2e6; /* Light border for subtle separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.contact-info-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-info-description {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
 }

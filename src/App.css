@@ -86,11 +86,14 @@ button.rounded-circle {
   height: auto; /* Default height for small and medium screens */
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
   .full-height-lg {
       height: 92vh; /* Full height on large screens and above */
       display: flex;
       flex-direction: column;
+  }
+  #home {
+    padding-top: 5em;
   }
 }
 /* General styling for a classical, piano theme */

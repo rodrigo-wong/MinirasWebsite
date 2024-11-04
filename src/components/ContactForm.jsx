@@ -57,7 +57,7 @@ const ContactForm = () => {
         </Alert>
       )}
       <Row className="d-flex align-items-stretch fs-5 mx-3 mx-md-4 mx-lg-5 g-3">
-        <Col md={6} lg={8} className="d-flex">
+        <Col md={12} lg={12} className="d-flex">
           <Form
             onSubmit={handleSubmit}
             className="p-4 shadow contact-form w-100"
@@ -105,19 +105,6 @@ const ContactForm = () => {
               </Button>
             </div>
           </Form>
-        </Col>
-        <Col md={6} lg={4} className="d-flex">
-          <div className="contact-info-card p-4 shadow rounded-3 w-100 d-flex flex-column justify-content-center align-items-center">
-            <h5 className="fw-bold mb-3 text-center">Or reach me at:</h5>
-            <p className="contact-info-text text-center">
-              <FontAwesomeIcon icon={faPhone} className="me-2" />
-              <strong>Phone:</strong> (437) 242-1689
-            </p>
-            <p className="contact-info-description text-left">
-              Feel free to reach out via phone if you have any questions or need
-              immediate assistance.
-            </p>
-          </div>
         </Col>
       </Row>
     </Container>

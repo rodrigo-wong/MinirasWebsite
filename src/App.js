@@ -11,20 +11,22 @@ function App() {
   return (
     <>
       <Navbar className="sticky-top" />
-      <div id="home" className="full-height-lg section">
-        <Home />
-      </div>
-      <div id="about" className="section">
-        <About />
-      </div>
-      <div id="summary" className="section" style={{ marginTop: "10em" }}>
-        <Summary />
-      </div>
-      <div id="services" className="section" style={{ marginTop: "10em" }}>
-        <Services />
-      </div>
-      <div id="contact" className="section" style={{ marginTop: "10em" }}>
-        <ContactForm />
+      <div className="bg-light">
+        <div id="home" className="full-height-lg section">
+          <Home />
+        </div>
+        <div id="about" className="section">
+          <About />
+        </div>
+        <div id="summary" className="section" style={{ marginTop: "10em" }}>
+          <Summary />
+        </div>
+        <div id="services" className="section" style={{ marginTop: "10em" }}>
+          <Services />
+        </div>
+        <div id="contact" className="section" style={{ marginTop: "10em" }}>
+          <ContactForm />
+        </div>
       </div>
     </>
   );

@@ -51,7 +51,7 @@ const Home = () => {
             Minira Najafzade
           </div>
 
-          <h1 className="fw-bold mb-3">I'm a Pianist</h1>
+          <h1 className="fw-bold mb-3">Music Educator, Collaborative Pianist</h1>
           <p className="text-muted fs-5">
             I am a pianist with two master’s degrees in Piano Performance,
             earned from the University of Toronto and the Baku Academy of Music.

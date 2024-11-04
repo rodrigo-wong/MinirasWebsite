@@ -25,7 +25,10 @@ const About = () => {
                 <br />
                 <div className="ms-3">
                   <ul>
-                    <li className="">Master of Music in Piano Performance</li>
+                    <li className="">Master's Degree in Collaborative Piano</li>
+                    <ul>
+                      <li>Under Steven Philcox</li>
+                    </ul>
                   </ul>
                 </div>
                 <strong>Francis Poulenc Academie</strong>
@@ -62,9 +65,7 @@ const About = () => {
                 <div className="ms-3">
                   <ul>
                     <li className="">
-                      Assisting in teaching collaborative piano courses and
-                      providing accompaniment for students in various
-                      performance settings
+                      Accompanying vocal lessons and masterclasses, assisting students in refining musical expression and interpretation
                     </li>
                   </ul>
                 </div>

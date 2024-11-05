@@ -46,7 +46,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Container className="my-5">
+    <Container className="py-5">
       <h2 className="text-center mb-4">Contact Me</h2>
       {submitted && (
         <Alert

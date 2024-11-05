@@ -7,7 +7,7 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 const Home = () => {
   return (
     <Container className="">
-      <Row className="align-items-center m-3 m-md-4 m-lg-5 g-3">
+      <Row className="align-items-center p-3 p-md-4 p-lg-5 g-3">
         {/* Image Column: Set order-first on smaller screens */}
         <Col
           xs={12}
@@ -52,7 +52,7 @@ const Home = () => {
           </div>
 
           <h1 className="fw-bold mb-3">Music Educator, Collaborative Pianist</h1>
-          <p className="text-muted fs-5">
+          <p className="text-muted responsive-text">
             I am a pianist with two master’s degrees in Piano Performance,
             earned from the University of Toronto and the Baku Academy of Music.
             Born into a family of musicians—my father, a woodwind professor, and

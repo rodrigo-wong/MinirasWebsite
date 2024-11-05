@@ -53,7 +53,7 @@ const ContactForm = () => {
           variant="success"
           className="text-center responsive-text mx-3 mx-md-4 mx-lg-5 g-3"
         >
-          Thank you for your message!
+          Thank you for your message! I will be in contact with you shortly.
         </Alert>
       )}
       {error && (

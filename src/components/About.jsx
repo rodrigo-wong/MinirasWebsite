@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Container>
       <h2 className="text-center mb-5">About Me</h2>
-      <Row className="justify-content-center fs-5 m-3 m-md-4 m-lg-5 g-3">
+      <Row className="justify-content-center responsive-text m-3 m-md-4 m-lg-5 g-3">
         {/* Left Column */}
         <Col xs={12} md={6} lg={4} className="mb-4">
           <Image
@@ -41,7 +41,7 @@ const About = () => {
           </Card>
         </Col>
       </Row>
-      <Row className="justify-content-center fs-5  m-3 m-md-4 m-lg-5 g-3">
+      <Row className="justify-content-center responsive-text  m-3 m-md-4 m-lg-5 g-3">
         <Col md={12} lg={5} className="mb-4">
           <Card className="shadow border-0 h-100 rounded-3">
             <Card.Body>

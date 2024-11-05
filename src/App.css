@@ -176,3 +176,35 @@ h2 {
 .section {
   scroll-margin-top: 100px; /* Adjust this value to the height of your Navbar */
 }
+/* Default font size */
+.responsive-text {
+  font-size: 16px; /* Base font size */
+}
+
+/* Font size for small devices and up */
+@media (min-width: 576px) {
+  .responsive-text {
+    font-size: 12px;
+  }
+}
+
+/* Font size for medium devices and up */
+@media (min-width: 768px) {
+  .responsive-text {
+    font-size: 14px;
+  }
+}
+
+/* Font size for large devices and up */
+@media (min-width: 992px) {
+  .responsive-text {
+    font-size: 16px;
+  }
+}
+
+/* Font size for extra large devices and up */
+@media (min-width: 1200px) {
+  .responsive-text {
+    font-size: 18px;
+  }
+}

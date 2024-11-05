@@ -43,11 +43,11 @@ const CustomNavbar = () => {
   return (
     <Navbar
       expand="lg"
-      className="shadow-sm px-4 bg-light sticky-top custom-navbar"
+      className="shadow-sm px-4 bg-light sticky-top custom-navbar "
       expanded={expanded}
     >
       <Navbar.Brand href="#" className="d-flex align-items-center ms-5">
-        <span className="logo-text fw-bold text-maroon fs-1">MN</span>
+        <span className="logo-text fw-bold text-maroon fs-1">M<span style={{color:'rgb(192, 166, 49)'}}>N</span></span>
         <span className="dot text-secondary fw-bold fs-1">.</span>
       </Navbar.Brand>
       <Navbar.Toggle

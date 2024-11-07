@@ -46,7 +46,7 @@ const CustomNavbar = () => {
       className="shadow-sm px-4 bg-light sticky-top custom-navbar "
       expanded={expanded}
     >
-      <Navbar.Brand href="#" className="d-flex align-items-center ms-5">
+      <Navbar.Brand href="#" className="d-flex align-items-center ms-lg-5 ms-md-2">
         <span className="logo-text fw-bold text-maroon fs-1">M<span style={{color:'rgb(192, 166, 49)'}}>N</span></span>
         <span className="dot text-secondary fw-bold fs-1">.</span>
       </Navbar.Brand>

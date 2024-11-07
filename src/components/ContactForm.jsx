@@ -65,7 +65,7 @@ const ContactForm = () => {
         </Alert>
       )}
       <Row className="d-flex align-items-stretch responsive-text mx-3 mx-md-4 mx-lg-5 g-3">
-        <Col md={8} lg={8} className="d-flex">
+        <Col md={12} lg={8} className="d-flex">
           <Form
             onSubmit={handleSubmit}
             className="p-4 shadow contact-form w-100"
@@ -117,7 +117,7 @@ const ContactForm = () => {
             </div>
           </Form>
         </Col>
-        <Col md={4} lg={4} className="d-none d-lg-block">
+        <Col lg={4} className="d-none d-lg-block">
           <Image
             src="/assets/IMG_5907.jpg"
             className="w-100 rounded-3 shadow"
